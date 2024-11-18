@@ -39,10 +39,10 @@ while (tries > 0) {
         }
     } else if (guessList.includes(user)) {
         tries--;
-        console.log(`No improvements.  // ${tries} attempts`);
+        console.log(`No improvements.`);
     } else {
         tries--;
-        console.log(`That letter doesn't appear in the word.  // ${tries} attempts`);
+        console.log(`That letter doesn't appear in the word.`);
     }
 
     if (guessList.join("") === guessWord) {
