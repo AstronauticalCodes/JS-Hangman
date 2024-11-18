@@ -1,11 +1,17 @@
+// UDS - Uncomment During Submission
+
+//region UDS
 const input = require("sync-input");
+//endregion
 
 let tries = 8;
 
 console.log(`H A N G M A N`);
 
 const words = ["python", "java", "swift", "javascript"];
+//region UDS
 const guessWord = words[Math.floor(Math.random() * words.length)];
+//endregion
 
 //region testingValues
 // const guessWord = "python";
@@ -23,11 +29,14 @@ let usedWords = "";
 let i = 0;
 while (tries > 0) {
     console.log("\n" + guessList.join(""));
+    //region UDS
     let user = input("Input a letter: ");
+    //endregion
 
     //region testingValues
     // console.log(`Input a letter: > ${trial1[i]}`);
     // let user = trial1[i];
+    // i++;
     //endregion
 
     if (guessWord.includes(user) && !guessList.includes(user)) {
@@ -52,5 +61,4 @@ while (tries > 0) {
         console.log("\nYou lost!");
         break;
     }
-    i++;
 }
