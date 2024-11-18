@@ -24,9 +24,9 @@ let usedWords = "";
 //region testingValue
 // const trial1 = ["t", "z", "t", "t", "y", "x", "y", "p", "p", "q", "p"]; // Sample 1 : for "python" example and also uncomment the guessWord to "python"
 // const trial1 = ["j", "i", "g", "g", "g", "g", "a", "v"]; // sample 2 : for "java" example and also uncomment the guessWord to "java"
+// let i = 0;
 //endregion
 
-let i = 0;
 while (tries > 0) {
     console.log("\n" + guessList.join(""));
     //region UDS
